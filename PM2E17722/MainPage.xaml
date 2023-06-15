@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E17722.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Inicio del Proyecto" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Image x:Name="foto" WidthRequest="100" HeightRequest="200"/>
+        
+        <Button x:Name="btnfoto" Text="Tomar Foto" Clicked="btnfoto_Clicked" />
+        
+        <Button x:Name="btnmapa" Text="Mapa" Clicked="btnmapa_Clicked" />
+
+
+
+    </StackLayout>
+
+</ContentPage>

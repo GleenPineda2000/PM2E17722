@@ -9,8 +9,8 @@
 
 
             <maps:Map x:Name="mapa"/>
-            
-            
+
+            <Button Text="Compartir Imagen" Clicked="btnimage_Clicked"/>
 
 
 

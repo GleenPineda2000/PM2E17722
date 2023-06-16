@@ -64,11 +64,24 @@ namespace PM2E17722
             mapa.MoveToRegion(new MapSpan(mapcenter, 1, 1));
         }
 
+        private async void btnimage_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Hola","RECUERDE TOMAR CAPTURA DE PANTALLA SOBRE LA UBICACION","ACEPTAR");
+
+            var imagen = await MediaPicker.PickPhotoAsync();
+            if(imagen == null)
+            {
+                return;
+            }
+
+            await Share.RequestAsync(new ShareFileRequest
+            {
+                Title = "Imagen",
+                File = new ShareFile(imagen)
+            });
 
 
-
-
-
+        }
     }
 
 
